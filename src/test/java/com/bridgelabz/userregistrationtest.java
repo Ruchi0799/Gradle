@@ -31,4 +31,11 @@ public class userregistrationtest{
         Assert.assertEquals(true,Email);
 
     }
+
+    @Test
+    public void isMobileNo_Valid_ifValid_return_true() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean MobileNo=userRegistration.validMobileNo("91 9892735509");
+        Assert.assertEquals(true,MobileNo);
+    }
 }

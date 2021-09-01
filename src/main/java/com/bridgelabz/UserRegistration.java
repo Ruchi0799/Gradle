@@ -28,4 +28,13 @@ public class UserRegistration {
             return false;
 
     }
+
+    public boolean validMobileNo(String MobileNo) {
+        String regexFN="^[0-9-]{1,}\\s[0-9]{10}$";
+        if (MobileNo.matches(regexFN))
+            return true;
+        else
+            return false;
+
+    }
 }
