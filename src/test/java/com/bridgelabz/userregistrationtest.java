@@ -11,11 +11,16 @@ public class userregistrationtest{
     @Test
     public void isFirstName_Valid_ifValid_return_true() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean email1=userRegistration.validFirstName("Ruchi");
-        Assert.assertEquals(true,email1);
+        boolean firstName=userRegistration.validFirstName("Ruchi");
+        Assert.assertEquals(true,firstName);
 
     }
 
+    @Test
+    public void isLastName_Valid_ifValid_return_true() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName=userRegistration.validLastName("Mandve");
+        Assert.assertEquals(true,lastName);
 
-
+    }
 }

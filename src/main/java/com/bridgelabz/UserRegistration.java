@@ -10,4 +10,13 @@ public class UserRegistration {
             return false;
 
     }
+
+    public boolean validLastName(String lastName) {
+        String regexFN="[A-Z][a-z]{2,}";
+        if (lastName.matches(regexFN))
+            return true;
+        else
+            return false;
+
+    }
 }
