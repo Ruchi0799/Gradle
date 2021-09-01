@@ -23,4 +23,12 @@ public class userregistrationtest{
         Assert.assertEquals(true,lastName);
 
     }
+
+    @Test
+    public void isEmailName_Valid_ifValid_return_true() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean Email=userRegistration.validEmail("abc.xyz@bl.co.in");
+        Assert.assertEquals(true,Email);
+
+    }
 }
