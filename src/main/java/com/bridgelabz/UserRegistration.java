@@ -21,7 +21,7 @@ public class UserRegistration {
     }
 
     public boolean validEmail(String Email) {
-        String regexFN="^[A-Z]?[a-z]{3,}[.-_+]?[0-9a-zA-Z]{0,}@[A-Za-z0-9]{1,}.[a-z]{2,}[.]?([a-z]{2})?$";
+        String regexFN="^([a-z0-9]{3,}[\\.-]?[a-z0-9]{3,})@([a-z\\d]{3,})[\\.]?([a-z]{3})$";
         if (Email.matches(regexFN))
             return true;
         else
