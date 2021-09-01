@@ -38,4 +38,12 @@ public class userregistrationtest{
         boolean MobileNo=userRegistration.validMobileNo("91 9892735509");
         Assert.assertEquals(true,MobileNo);
     }
+
+    
+    @Test
+    public void isPassword_Valid_ifValid_return_true() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean Password=userRegistration.validPassword("Ruchi07#");
+        Assert.assertEquals(true,Password);
+    }
 }

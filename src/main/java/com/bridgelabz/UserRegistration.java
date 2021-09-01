@@ -37,4 +37,14 @@ public class UserRegistration {
             return false;
 
     }
+
+    public boolean validPassword(String Password) {
+        String regexFN="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\\W).*$";
+        if (Password.matches(regexFN))
+            return true;
+        else
+            return false;
+
+    }
 }
+
